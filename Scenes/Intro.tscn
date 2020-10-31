@@ -5,10 +5,6 @@
 
 [node name="Intro" type="Node2D"]
 
-[node name="VideoContainer" type="Sprite" parent="."]
-texture = ExtResource( 1 )
-centered = false
-
 [node name="VideoPlayer" type="VideoPlayer" parent="."]
 margin_left = 80.0438
 margin_top = 93.6265
@@ -19,3 +15,7 @@ autoplay = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="VideoContainer" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
