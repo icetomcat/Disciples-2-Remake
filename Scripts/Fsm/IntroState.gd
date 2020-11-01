@@ -16,4 +16,4 @@ func _on_leave_state() -> void:
 	intro_node.queue_free()
 	
 func _on_intro_fineshed() -> void:
-	state_machine.transition("intro_to_main")
+	state_machine.transition("main_menu")

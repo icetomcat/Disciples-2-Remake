@@ -1,6 +1,7 @@
-[gd_scene load_steps=65 format=2]
+[gd_scene load_steps=67 format=2]
 
 [ext_resource path="res://Scenes/MainMenu/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://Video/MenuAnim/TRANS_INTRO2MAIN.ogv" type="VideoStream" id=2]
 [ext_resource path="res://Assets/Interface/MainMenu.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation001.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation002.png" type="Texture" id=5]
@@ -62,6 +63,7 @@
 [ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation028.png" type="Texture" id=61]
 [ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation029.png" type="Texture" id=62]
 [ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation030.png" type="Texture" id=63]
+[ext_resource path="res://Music/MainMenu.ogg" type="AudioStream" id=64]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -197,3 +199,16 @@ valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="IntroToMain" type="VideoPlayer" parent="."]
+visible = false
+margin_right = 800.0
+margin_bottom = 608.0
+stream = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 64 )
+autoplay = true
