@@ -1,0 +1,214 @@
+[gd_scene load_steps=67 format=2]
+
+[ext_resource path="res://Scenes/MainMenu/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://Video/MenuAnim/TRANS_INTRO2MAIN.ogv" type="VideoStream" id=2]
+[ext_resource path="res://Assets/Interface/MainMenu.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation001.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation002.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies005.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies003.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies006.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies004.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies007.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation003.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies001.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies002.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies023.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies024.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies025.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies026.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies027.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies028.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies029.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies030.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies008.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies009.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies010.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies011.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies013.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies012.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies014.png" type="Texture" id=28]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies015.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies016.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies017.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies018.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies019.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies020.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies022.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Interface/FirefliesAnimation.sprites/Fireflies021.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation004.png" type="Texture" id=37]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation005.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation006.png" type="Texture" id=39]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation007.png" type="Texture" id=40]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation008.png" type="Texture" id=41]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation009.png" type="Texture" id=42]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation010.png" type="Texture" id=43]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation011.png" type="Texture" id=44]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation012.png" type="Texture" id=45]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation013.png" type="Texture" id=46]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation014.png" type="Texture" id=47]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation015.png" type="Texture" id=48]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation016.png" type="Texture" id=49]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation017.png" type="Texture" id=50]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation018.png" type="Texture" id=51]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation019.png" type="Texture" id=52]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation020.png" type="Texture" id=53]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation021.png" type="Texture" id=54]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation022.png" type="Texture" id=55]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation023.png" type="Texture" id=56]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation024.png" type="Texture" id=57]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation025.png" type="Texture" id=58]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation026.png" type="Texture" id=59]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation027.png" type="Texture" id=60]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation028.png" type="Texture" id=61]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation029.png" type="Texture" id=62]
+[ext_resource path="res://Assets/Interface/RiverAnimation.sprites/RiverAnimation030.png" type="Texture" id=63]
+[ext_resource path="res://Music/MainMenu.ogg" type="AudioStream" id=64]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 27 ), ExtResource( 26 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 36 ), ExtResource( 35 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="MainMenu" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="RiverAnimation" type="AnimatedSprite" parent="."]
+position = Vector2( 628, 431 )
+frames = SubResource( 1 )
+frame = 5
+centered = false
+
+[node name="FirefliesAnimation" type="AnimatedSprite" parent="."]
+position = Vector2( 73, 321 )
+frames = SubResource( 2 )
+frame = 28
+centered = false
+
+[node name="Controls" type="Node2D" parent="."]
+
+[node name="SinglePlayerLabel" type="Label" parent="Controls"]
+margin_left = 524.0
+margin_top = 20.0
+margin_right = 738.0
+margin_bottom = 52.0
+mouse_filter = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SinglePlayer"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MultiplayerLabel" type="Label" parent="Controls"]
+margin_left = 525.491
+margin_top = 78.8628
+margin_right = 739.491
+margin_bottom = 110.863
+mouse_filter = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Multiplayer"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TutorialLabel" type="Label" parent="Controls"]
+margin_left = 523.618
+margin_top = 137.297
+margin_right = 737.618
+margin_bottom = 169.297
+mouse_filter = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Tutorial"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionsLabel" type="Label" parent="Controls"]
+margin_left = 524.677
+margin_top = 196.097
+margin_right = 738.677
+margin_bottom = 228.097
+mouse_filter = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Options"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IntroLabel" type="Label" parent="Controls"]
+margin_left = 525.207
+margin_top = 255.957
+margin_right = 739.207
+margin_bottom = 287.957
+mouse_filter = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Intro"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CreditsLabel" type="Label" parent="Controls"]
+margin_left = 523.423
+margin_top = 314.228
+margin_right = 737.423
+margin_bottom = 346.228
+mouse_filter = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Credits"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QuitLabel" type="Label" parent="Controls"]
+margin_left = 525.207
+margin_top = 375.472
+margin_right = 739.207
+margin_bottom = 407.472
+mouse_filter = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Quit"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IntroToMain" type="VideoPlayer" parent="."]
+visible = false
+margin_right = 800.0
+margin_bottom = 608.0
+stream = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 64 )
+autoplay = true
