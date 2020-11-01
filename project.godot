@@ -8,9 +8,38 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Resource",
+"class": "EmptyState",
+"language": "GDScript",
+"path": "res://Scripts/Fsm/EmptyState.gd"
+}, {
+"base": "Node2D",
+"class": "Intro",
+"language": "GDScript",
+"path": "res://Scenes/Intro.gd"
+}, {
+"base": "Node2D",
+"class": "MainMenu",
+"language": "GDScript",
+"path": "res://Scenes/MainMenu/MainMenu.gd"
+}, {
+"base": "Resource",
+"class": "StateMachine",
+"language": "GDScript",
+"path": "res://addons/fsm/StateMachine.gd"
+}, {
+"base": "Resource",
+"class": "StateMachineFactory",
+"language": "GDScript",
+"path": "res://addons/fsm/StateMachineFactory.gd"
+} ]
 _global_script_class_icons={
-
+"EmptyState": "",
+"Intro": "",
+"MainMenu": "",
+"StateMachine": "",
+"StateMachineFactory": ""
 }
 
 [application]
@@ -22,6 +51,8 @@ config/icon="res://icon.png"
 [display]
 
 window/size/width=800
+window/stretch/mode="2d"
+window/stretch/aspect="keep_height"
 
 [rendering]
 
