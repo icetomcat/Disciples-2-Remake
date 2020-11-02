@@ -1,5 +1,7 @@
 extends EmptyState
 
+const Intro = preload("res://Scenes/Intro.gd")
+
 var intro_node: Intro
 
 func _init().():

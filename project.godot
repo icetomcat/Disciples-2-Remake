@@ -15,11 +15,6 @@ _global_script_classes=[ {
 "path": "res://Scripts/Fsm/EmptyState.gd"
 }, {
 "base": "Node2D",
-"class": "Intro",
-"language": "GDScript",
-"path": "res://Scenes/Intro.gd"
-}, {
-"base": "Node2D",
 "class": "MainMenu",
 "language": "GDScript",
 "path": "res://Scenes/MainMenu/MainMenu.gd"
@@ -36,7 +31,6 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "EmptyState": "",
-"Intro": "",
 "MainMenu": "",
 "StateMachine": "",
 "StateMachineFactory": ""
@@ -59,3 +53,4 @@ window/stretch/aspect="keep_height"
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
+environment/default_clear_color=Color( 0, 0, 0, 1 )
