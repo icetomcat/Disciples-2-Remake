@@ -8,12 +8,14 @@ onready var state_machine: StateMachine = smf.create({
   "states": [
 	{"id": "none", "state": preload("res://Scripts/Fsm/EmptyState.gd")},
 	{"id": "intro", "state": preload("res://Scripts/Fsm/IntroState.gd")},
-	{"id": "main_menu", "state": preload("res://Scripts/Fsm/MainMenuState.gd")}
+	{"id": "main_menu", "state": preload("res://Scripts/Fsm/MainMenuState.gd")},
+	{"id": "tutorial", "state": preload("res://Scripts/Fsm/TutorialState.gd")},
   ],
   "transitions": [
 	{"state_id": "none", "to_states": ["intro"]},
 	{"state_id": "intro", "to_states": ["main_menu"]},
-	{"state_id": "main_menu", "to_states": ["intro", "single_player"]}
+	{"state_id": "main_menu", "to_states": ["single_player", "tutorial", "intro"]},
+	{"state_id": "tutorial", "to_states": ["main_menu"]},
   ]
 })
 
