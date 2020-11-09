@@ -2,6 +2,18 @@ extends Node
 
 var _bindings: Dictionary = {}
 
+class Autofactory:
+	var _context
+	
+	func _init(context):
+		_context = context
+		
+	func _get_factory() -> FuncRef:
+		return funcref(self, "_factory")
+		
+	func _factory():
+		return _context.container.get(_context.service_identifier)
+
 class BindingToSyntax:
 	var _container
 	var _service_identifier
@@ -18,14 +30,25 @@ class BindingToSyntax:
 			"bind": value,
 			"tags": {}
 		}
-		_container._bindings[_service_identifier].push_back(binding)
+		_container._bindings[_service_identifier].push_front(binding)
 		return BindingInWhenOnSyntax.new(binding)
 		
 	func to_constant_value(value):
 		return _to_scope(value, "constant")
 		
+	func to_autofactory(service_identifier):
+		return _to_scope({
+			"autofactory": Autofactory.new({
+				"container": _container,
+				"service_identifier": service_identifier
+			}),
+		}, "autofactory")
+		
 	func to(value) -> BindingInWhenOnSyntax:
 		return _to_scope(value, "default")
+		
+	static func _factory(context):
+		return funcref(BindingToSyntax, "")
 
 class Constraint:
 	var _target: Object
@@ -145,6 +168,8 @@ func _resolve(bind, target):
 			bind.bind = result
 			_inject_property_dependencies(bind, result)
 		return result
+	elif bind.scope == "autofactory":
+		return bind.bind.autofactory._get_factory()
 	elif bind.scope == "constant":
 		return bind.bind
 	
@@ -171,8 +196,12 @@ func get_tagged(service_identifier: String, tag: String, value):
 		if result:
 			return result
 
-func get_all(service_identifier: String):
+func get_all(service_identifier: String) -> Array:
 	var result = []
 	for bind in _find_bindings(service_identifier):
 		result.push_back(_resolve(bind, {}))
 	return result
+	
+func unbind(service_identifier: String) -> void:
+	if _bindings.has(service_identifier):
+		_bindings.erase(service_identifier)
